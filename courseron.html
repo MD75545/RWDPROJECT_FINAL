@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		h1,h2{
+			background-color: beige;
+		}
+		#ui1,#ol1{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="jsq.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('#head1').mouseenter(function(){
+  			$('#ui1').slideDown(2000);
+		})
+  		$('#head2').mouseenter(function(){
+  			$('#ol1').slideDown(2000);
+  	    })
+  		$('#head1').mouseleave(function(){
+  			$('#ui1').slideUp(2000);
+  		})
+  		$('#head2').mouseleave(function(){
+  			$('#ol1').slideUp(2000);
+  		})
+  	})
+  </script>
+  <h1 id="head1">Unordered List</h1>
+  <ul id="ui1">
+  	<li>Item</li>
+  	<li>Iteam</li>
+  	<li>Iteams</li>  
+  	<li>Iteams</li>	
+  </ul>
+
+  <h1 id="head2">Ordered list</h1>
+  <ol id="ol1">
+  	<li>messi</li>
+  	<li>cr7</li>
+  	<li>mbappe</li>
+	<li>m.salah</li>  	
+  </ol>
+
+</body>
+</html>
